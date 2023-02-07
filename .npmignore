@@ -1,0 +1,7 @@
+.editorconfig
+.eslintrc.yaml
+.gitignore
+manager.js
+test
+!src/**
+.DS_Store

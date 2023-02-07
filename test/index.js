@@ -5,8 +5,5 @@
 
 const tester = require('@absolunet/tester');
 
-tester.npmPackage.validateMulti();
+tester.npmPackage.validate();
 
-tester.npmPackage.multiPackagesPaths.forEach((path) => {
-	tester.npmPackage.validateSub({ cwd: path, group: path.split('/').pop() });
-});

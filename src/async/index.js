@@ -1,5 +1,5 @@
 //--------------------------------------------------------
-//-- File System Promise
+//-- File System Async
 //--------------------------------------------------------
 'use strict';
 
@@ -13,7 +13,7 @@ const xml         = require('./lib/xml');
 const yaml        = require('./lib/yaml');
 
 
-class Fsp {
+class FSAsync {
 
 	get access()     { return gracefulFs.promises.access; }
 	get appendFile() { return gracefulFs.promises.appendFile; }
@@ -84,4 +84,4 @@ class Fsp {
 }
 
 
-module.exports = new Fsp();
+module.exports = FSAsync;

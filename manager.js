@@ -5,4 +5,4 @@
 
 const manager = require('@absolunet/manager');
 
-manager.multiScriptsRunner();
+manager.singleScriptsRunner();

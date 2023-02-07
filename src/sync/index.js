@@ -13,7 +13,7 @@ const xml         = require('./lib/xml');
 const yaml        = require('./lib/yaml');
 
 
-class Fss {
+class FSSync {
 
 	get access()     { return gracefulFs.accessSync; }
 	get appendFile() { return gracefulFs.appendFileSync; }
@@ -95,4 +95,4 @@ class Fss {
 }
 
 
-module.exports = new Fss();
+module.exports = FSSync;
